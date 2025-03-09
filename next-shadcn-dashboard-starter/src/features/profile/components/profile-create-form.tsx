@@ -45,7 +45,7 @@ const ProfileCreateForm: React.FC<ProfileFormType> = ({
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [imgLoading, setImgLoading] = useState(false);
-  const title = initialData ? 'Edit product' : 'Create Your Profile';
+  const title = initialData ? 'Edit product' : 'Crei Seu Perfil';
   const description = initialData
     ? 'Edit a product.'
     : 'To create your resume, we first need some basic information about you.';
@@ -127,12 +127,12 @@ const ProfileCreateForm: React.FC<ProfileFormType> = ({
   const steps = [
     {
       id: 'Step 1',
-      name: 'Personal Information',
+      name: 'Informações Pessoais',
       fields: ['firstname', 'lastname', 'email', 'contactno', 'country', 'city']
     },
     {
       id: 'Step 2',
-      name: 'Professional Informations',
+      name: 'Informações Profissionais',
       // fields are mapping and flattening for the error to be trigger  for the dynamic fields
       fields: fields
         ?.map((_, index) => [

@@ -1,5 +1,6 @@
 import PageContainer from '@/components/layout/page-container';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { userAgent } from 'next/server';
 import React from 'react';
 
 export default function OverViewLayout({
@@ -18,14 +19,14 @@ export default function OverViewLayout({
       <div className='flex flex-1 flex-col space-y-2'>
         <div className='flex items-center justify-between space-y-2'>
           <h2 className='text-2xl font-bold tracking-tight'>
-            Hi, Welcome back 👋
+            Olá, Bem vindo de volta👋
           </h2>
         </div>
         <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-4'>
           <Card>
             <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
               <CardTitle className='text-sm font-medium'>
-                Total Revenue
+                Total de Vendas
               </CardTitle>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -50,7 +51,7 @@ export default function OverViewLayout({
           <Card>
             <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
               <CardTitle className='text-sm font-medium'>
-                Subscriptions
+                Assinaturas
               </CardTitle>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -76,7 +77,7 @@ export default function OverViewLayout({
           </Card>
           <Card>
             <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-              <CardTitle className='text-sm font-medium'>Sales</CardTitle>
+              <CardTitle className='text-sm font-medium'>Vendas</CardTitle>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -100,7 +101,7 @@ export default function OverViewLayout({
           </Card>
           <Card>
             <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-              <CardTitle className='text-sm font-medium'>Active Now</CardTitle>
+              <CardTitle className='text-sm font-medium'>Activos Agora</CardTitle>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'

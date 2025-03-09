@@ -22,7 +22,7 @@ export const navItems: NavItem[] = [
     items: [] // Empty array as there are no child items for Dashboard
   },
   {
-    title: 'Product',
+    title: 'Produto',
     url: '/dashboard/product',
     icon: 'product',
     shortcut: ['p', 'p'],
@@ -30,7 +30,7 @@ export const navItems: NavItem[] = [
     items: [] // No child items
   },
   {
-    title: 'Account',
+    title: 'Conta',
     url: '#', // Placeholder as there is no direct link for the parent
     icon: 'billing',
     isActive: true,
@@ -42,16 +42,16 @@ export const navItems: NavItem[] = [
         icon: 'userPen',
         shortcut: ['m', 'm']
       },
-      {
-        title: 'Login',
-        shortcut: ['l', 'l'],
-        url: '/',
-        icon: 'login'
-      }
+      //{
+      //  title: 'Login',
+      //  shortcut: ['l', 'l'],
+      //  url: '/',
+      //  icon: 'login'
+      //}
     ]
   },
   {
-    title: 'Kanban',
+    title: 'Tarefas',
     url: '/dashboard/kanban',
     icon: 'kanban',
     shortcut: ['k', 'k'],

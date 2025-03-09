@@ -101,11 +101,11 @@ export default function ProductForm({
                         onValueChange={field.onChange}
                         maxFiles={4}
                         maxSize={4 * 1024 * 1024}
-                        // disabled={loading}
-                        // progresses={progresses}
-                        // pass the onUpload function here for direct upload
-                        // onUpload={uploadFiles}
-                        // disabled={isUploading}
+                      // disabled={loading}
+                      // progresses={progresses}
+                      // pass the onUpload function here for direct upload
+                      // onUpload={uploadFiles}
+                      // disabled={isUploading}
                       />
                     </FormControl>
                     <FormMessage />
@@ -120,7 +120,7 @@ export default function ProductForm({
                 name='name'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Product Name</FormLabel>
+                    <FormLabel>Nome do Produto</FormLabel>
                     <FormControl>
                       <Input placeholder='Enter product name' {...field} />
                     </FormControl>
@@ -133,14 +133,14 @@ export default function ProductForm({
                 name='category'
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Category</FormLabel>
+                    <FormLabel>Categoria</FormLabel>
                     <Select
                       onValueChange={(value) => field.onChange(value)}
                       value={field.value[field.value.length - 1]}
                     >
                       <FormControl>
                         <SelectTrigger>
-                          <SelectValue placeholder='Select categories' />
+                          <SelectValue placeholder='Selecione a categoria' />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
